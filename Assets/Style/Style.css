@@ -102,6 +102,12 @@ body {
   width: 100%;
   margin: 2rem;
 }
+.card:hover {
+  transition: all 0.4s ease-in-out;
+  transform: scale(1.1);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
 .card-col {
   display: flex;
   flex-flow: column wrap;
@@ -149,6 +155,10 @@ body {
 @media all and (max-width: 370px) {
   .card {
     margin: 1rem 0;
+  }
+  .card:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.09);
   }
   .link {
     margin: 1rem 0;
